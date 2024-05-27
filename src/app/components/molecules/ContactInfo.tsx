@@ -26,27 +26,27 @@ const ContactInfo: React.FC<ContactInfoProps> = ({
       <BodyText text="Es necesario un contacto de emergencia" />
       <Cajoncito
         title={"Nombre"}
-        value={data.contactName}
+        value={data.contact_name}
         onChange={(e) => {
-          onDataChange(e, "contactName");
+          onDataChange(e, "contact_name");
         }}
         disabled={disabled}
         required={required}
       />
       <Cajoncito
         title={"Apellidos"}
-        value={data.contactLastname}
+        value={data.contact_lastname}
         onChange={(e) => {
-          onDataChange(e, "contactLastname");
+          onDataChange(e, "contact_lastname");
         }}
         disabled={disabled}
         required={required}
       />
       <Cajoncito
-        title={"Teléfono"}
-        value={data.contactPhone}
+        title={"Télefono"}
+        value={data.contact_phone}
         onChange={(e) => {
-          onDataChange(e, "contactPhone");
+          onDataChange(e, "contact_phone");
         }}
         disabled={disabled}
         required={required}

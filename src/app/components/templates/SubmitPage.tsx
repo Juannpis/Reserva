@@ -10,6 +10,7 @@ import SectionTitle from "../atoms/texts/SectionTitle";
 import SitasAppBar from "../molecules/SitasAppBar";
 import PassengerInfo from "../organisms/PassengerInfo";
 import { Person } from "@/app/api/person/interface/person";
+import { deprecate } from "util";
 
 const SubmitPage: React.FC = () => {
   const router = useRouter();
@@ -24,14 +25,15 @@ const SubmitPage: React.FC = () => {
 
   const [passengers, setPassengers] = useState<Person[]>([
     {
+      type: "",
+      id_doc: "",
       name: "",
       lastname: "",
-      email: "",
+      mail: "",
       phone: "",
-      address: "",
-      contactName: "",
-      contactLastname: "",
-      contactPhone: "",
+      contact_name: "",
+      contact_lastname: "",
+      contact_phone: ""
     },
   ]);
 
@@ -53,14 +55,15 @@ const SubmitPage: React.FC = () => {
 
   const addNewPassenger = () => {
     const newPassenger = {
+      type: "",
+      id_doc: "",
       name: "",
       lastname: "",
-      email: "",
+      mail: "",
       phone: "",
-      address: "",
-      contactName: "",
-      contactLastname: "",
-      contactPhone: "",
+      contact_name: "",
+      contact_lastname: "",
+      contact_phone: ""
     };
 
     setPassengers([...passengers, newPassenger]);

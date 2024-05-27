@@ -15,12 +15,13 @@ export interface PersonAPI {
 }
 
 export interface Person {
+  type: string
+  id_doc: string
   name: string
   lastname: string
-  email: string
+  mail: string
   phone: string
-  address: string
-  contactName: string
-  contactLastname: string
-  contactPhone: string
+  contact_name: string
+  contact_lastname: string
+  contact_phone: string
 }

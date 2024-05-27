@@ -70,7 +70,10 @@ const ConfirmationPage: React.FC = () => {
             <h1 className="text-lg font-bold">Reserva #0000</h1>
             <h3 className="text-sm">Estado de la Reserva: SIN PAGAR</h3>
           </div>
-          <Button variant="contained" onClick={handleConfirmClick}>
+          <Button variant="contained" onClick={() => {
+            console.log(passengers)
+            handleConfirmClick
+          }}>
             Confirmar
           </Button>
         </div>

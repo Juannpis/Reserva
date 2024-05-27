@@ -1,4 +1,4 @@
-// File: C:\Users\Sebastian\Desktop\Proyectos\Reservas-CodeFactory\fork\Reserva\src\app\confirm\page.tsx
+// File: /Users/davidrodriguez/Next/reserva2/src/app/confirm/page.tsx
 import * as entry from '../../../../src/app/confirm/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

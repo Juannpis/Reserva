@@ -26,9 +26,10 @@ const ReservationsTable: React.FC = () => {
           <TableRow>
             <TableCellContent align="center" text="Código Reserva" />
             <TableCellContent align="center" text="Código Vuelo" />
-            <TableCellContent align="center" text="Destinos" />
+            <TableCellContent align="center" text="Tipo" />
             <TableCellContent align="center" text="Salida" />
             <TableCellContent align="center" text="Llegada" />
+            <TableCellContent align="center" text="Precio" />
             <TableCellContent align="center" text="Estado de la Reserva" />
           </TableRow>
         </TableHead>
@@ -40,6 +41,7 @@ const ReservationsTable: React.FC = () => {
               <TableCell align="center"></TableCell>
               <TableCell align="center"></TableCell>
               <TableCell align="center"></TableCell>
+              <TableCell align="center">{booking.total_price}</TableCell>
               <TableCell align="center">{booking.booking_status}</TableCell>
             </TableRow>
           ))}

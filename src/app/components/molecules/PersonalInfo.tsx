@@ -22,6 +22,24 @@ const PersonalInfo: React.FC<PersonalInfoProps> = ({
   return (
     <Stack spacing={1} direction="column">
       <Cajoncito
+        title={"Tipo de documento"}
+        value={data.type}
+        onChange={(e) => {
+          onDataChange(e, "type");
+        }}
+        disabled={disabled}
+        required={required}
+      />
+      <Cajoncito
+        title={"Número de documento"}
+        value={data.id_doc}
+        onChange={(e) => {
+          onDataChange(e, "id_doc");
+        }}
+        disabled={disabled}
+        required={required}
+      />
+      <Cajoncito
         title={"Nombre"}
         value={data.name}
         onChange={(e) => {
@@ -41,9 +59,9 @@ const PersonalInfo: React.FC<PersonalInfoProps> = ({
       />
       <Cajoncito
         title={"Correo"}
-        value={data.email}
+        value={data.mail}
         onChange={(e) => {
-          onDataChange(e, "email");
+          onDataChange(e, "mail");
         }}
         disabled={disabled}
         required={required}
@@ -53,15 +71,6 @@ const PersonalInfo: React.FC<PersonalInfoProps> = ({
         value={data.phone}
         onChange={(e) => {
           onDataChange(e, "phone");
-        }}
-        disabled={disabled}
-        required={required}
-      />
-      <Cajoncito
-        title={"Dirección en caso de pérdida de equipaje"}
-        value={data.address}
-        onChange={(e) => {
-          onDataChange(e, "address");
         }}
         disabled={disabled}
         required={required}
